@@ -102,7 +102,7 @@ top_menu_itemArray.map((btn_menu)=>{
 });
 
 const searchingValue = async (searchingValue) => {
-    const getItems = await fetch('../data.json');
+    const getItems = await fetch('data.json');
     const json = await getItems.json();
     const infoArray = json.data;
     console.log(typeof infoArray);
@@ -196,7 +196,7 @@ getting Results when loading page
 ==================================================*/
 
 window.addEventListener('load', async ()=>{
-    const getItems = await fetch('../data.json');
+    const getItems = await fetch('data.json');
     const json = await getItems.json();
     const infoArray = json.data;
 
